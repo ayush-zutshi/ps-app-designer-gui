@@ -17,18 +17,23 @@ This program is a simple Powershell XAML GUI that loads a PeopleSoft Configurati
 
 ### Setup
 * **See the header in "App Designer GUI.ps1" for configuration options**.
-
 ### Shortcut Creation
 * Right-Click on the desktop and select "New --> Shortcut"
 * Set "Location" to:
-
-> **%SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -WindowStyle Hidden -file "C:\<path to>\Application Designer GUI.ps1"**
-
+  ```
+  %SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -WindowStyle Hidden -file "<path to>\Application Designer GUI.ps1"
+  ```
 * Click "Next"
-* Type a Name for this Shortcut.  Enter: **App Designer GUI**.
+* Type a Name for this Shortcut.  Enter: 
+  ```
+  App Designer GUI
+  ```
 * Click "Finish"
 * Right-click on the newly created shortcut and select "Properties".
 * Set "Run" property to "Minimized".
-* You may click on the "Change Icon" button and browse for %PS_HOME%\bin\client\winx86\pside.exe and select the App Designer icon.
+* You may click on the "Change Icon" button and browse for:
+  ```
+  %PS_HOME%\bin\client\winx86\pside.exe and select the App Designer icon.
+  ``````
 * Click "Okay" and you are done!
 * Double-Click the shortcut to execute the PowerShell script.
